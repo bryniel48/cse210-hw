@@ -1,5 +1,5 @@
 # cse210-student-template
-This is the starter code for students in CSE 210. For Bryan Nielsens
+This is the starter code for students in CSE 210. For Bryan Nielsen. Hello Git
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
