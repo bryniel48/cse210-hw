@@ -26,8 +26,8 @@ class Program
                 }
             }
         int totalCount = numbersList.Count - 1;
-        double average = totalAmount / totalCount;
-        //for (int i = 0; i < numbersList.Count; )
+        double average = (double)totalAmount / totalCount;
+        
         Console.WriteLine($"The sum is {totalAmount}");
         Console.WriteLine($"The average was {average}");
         Console.WriteLine($"The highest number is {highestNumber}");
