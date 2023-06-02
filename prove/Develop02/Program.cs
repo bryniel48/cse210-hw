@@ -9,17 +9,23 @@ namespace Develop02
         static void Main(string[] args)
         {
             Prompt newPrompts = new Prompt();
-
+            DateTime currentDateTime = DateTime.Now;
 
             Entry myEntry = new Entry();
-            myEntry.StorePrompt($"{newPrompts.getRandomPrompt()}");
-            myEntry.StoreResponse("Bryan Nielsen");
-            myEntry.StoreDate("8 May 2023");
+            String ranPrompt = newPrompts.getRandomPrompt();
+            Console.WriteLine(ranPrompt);
+            String answer = Console.ReadLine();
+            myEntry.StorePrompt(ranPrompt);
+            myEntry.StoreResponse(answer);
+            myEntry.StoreDate(currentDateTime.ToString());
 
             Entry yourEntry = new Entry();
-            yourEntry.StorePrompt("What is your favorite food?");
-            yourEntry.StoreResponse("Pizza");
-            yourEntry.StoreDate("8 May 2023");
+            String yourRanPrompt = newPrompts.getRandomPrompt();
+            Console.WriteLine(ranPrompt);
+            String yourAnswer = Console.ReadLine();
+            myEntry.StorePrompt(yourRanPrompt);
+            myEntry.StoreResponse(yourAnswer);
+            yourEntry.StoreDate(currentDateTime.ToString());
 
             Journal journal = new Journal();
             journal.StoreEntry(myEntry);
